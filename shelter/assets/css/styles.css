@@ -148,7 +148,7 @@ ul {
   transition-timing-function: ease-in-out;
 }
 
-.pet-slide:hover .pet-button-container .pet-button {
+.pet-card:hover .pet-button-container .pet-button {
   background-color: var(--color-primary, #f1cdb3);
 }
 
@@ -476,7 +476,7 @@ span.nav-link-active::before {
   gap: 90px;
 }
 
-.pet-slide {
+.pet-card {
   background-color: var(--color-light-s, #fafafa);
   padding-bottom: 30px;
   width: 270px;
@@ -492,7 +492,7 @@ span.nav-link-active::before {
   transition-timing-function: ease-in-out;
 }
 
-.pet-slide:hover {
+.pet-card:hover {
   background-color: var(--color-light-xl, #fff);
 }
 
