@@ -30,7 +30,7 @@ ul {
   list-style-type: none;
 }
 
-li.nav-item:hover {
+li.nav-item:hover a {
   cursor: pointer;
 }
 
@@ -146,10 +146,9 @@ ul {
   transition-property: all;
   transition-delay: 0.1s;
   transition-timing-function: ease-in-out;
-  cursor: pointer;
 }
 
-.pet-button:hover {
+.pet-card:hover .pet-button-container .pet-button {
   background-color: var(--color-primary, #f1cdb3);
 }
 
@@ -262,7 +261,7 @@ a.nav-link:active {
 a.nav-link::before {
   content: "";
   position: absolute;
-  top: 20px;
+  top: 21px;
   height: 3px;
   width: stretch;
   background-color: transparent;
@@ -286,7 +285,7 @@ span.nav-link::before {
   content: "";
   position: absolute;
   display: inline-block;
-  top: 23px;
+  top: 24px;
   left: 0;
   right: 0;
   height: 3px;
@@ -300,10 +299,6 @@ span.nav-link::before {
 
 span.nav-link-active::before {
   background-color: var(--color-primary);
-}
-
-li.nav-item span.nav-link-active {
-  cursor: default;
 }
 
 /* Start */
@@ -481,7 +476,7 @@ li.nav-item span.nav-link-active {
   gap: 90px;
 }
 
-.pet-slide {
+.pet-card {
   background-color: var(--color-light-s, #fafafa);
   padding-bottom: 30px;
   width: 270px;
@@ -490,6 +485,15 @@ li.nav-item span.nav-link-active {
   justify-content: center;
   align-items: center;
   gap: 25px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+
+.pet-card:hover {
+  background-color: var(--color-light-xl, #fff);
 }
 
 .pet-name {
@@ -501,8 +505,7 @@ li.nav-item span.nav-link-active {
   height: 270px;
   max-width: 270px;
   max-height: 270px;
-  background-color: var(--color-light-xl, #fff);
-  background-size: cover;
+  background-color: var(--color-light-xl, #fff) cover;
 }
 
 .pet-image-1 {
@@ -715,6 +718,7 @@ li.nav-item span.nav-link-active {
 }
 
 .footer-location-container {
+  margin-left: 80px;
   padding-top: 16px;
   width: 320px;
   display: flex;
@@ -764,6 +768,7 @@ li.nav-item span.nav-link-active {
 }
 
 .location-icon {
+  min-width: 22px;
   width: 22px;
   height: 32px;
   background: url(../icons/icon-location.svg) no-repeat;
