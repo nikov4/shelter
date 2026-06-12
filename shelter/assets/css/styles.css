@@ -65,10 +65,11 @@ ul {
 .header-h2 {
   color: var(--color-dark-l, #545454);
   font-family: Georgia;
-  font-size: 44px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 400;
-  line-height: 130%; /* 57.2px */
+  line-height: 130%; /* 45.5px */
+  letter-spacing: 2.1px;
 }
 
 .header-h3 {
@@ -320,7 +321,6 @@ li.nav-item span.nav-link-active {
 
 .start-container {
   margin-top: 60px;
-  margin-bottom: 243px;
   display: flex;
   flex-direction: row;
   gap: 42px;
@@ -365,4 +365,38 @@ li.nav-item span.nav-link-active {
   max-width: 698px;
   max-height: 728px;
   background: url(../images/start-screen-puppy.png) no-repeat;
+}
+
+/* About */
+
+.about-container {
+  padding: 80px 40px 100px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 120px;
+}
+
+.about-image-container {
+  margin-left: 175px;
+  width: 300px;
+  height: 408px;
+  max-width: 300px;
+  max-height: 408px;
+  background: url(../images/about-pets.png) no-repeat;
+}
+
+.about-content-container {
+  width: 370px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.about-text {
+  width: 430px;
 }
