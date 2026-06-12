@@ -30,7 +30,7 @@ ul {
   list-style-type: none;
 }
 
-li.nav-item:hover {
+li.nav-item:hover a {
   cursor: pointer;
 }
 
@@ -300,10 +300,6 @@ span.nav-link::before {
 
 span.nav-link-active::before {
   background-color: var(--color-primary);
-}
-
-li.nav-item span.nav-link-active {
-  cursor: default;
 }
 
 /* Start */
