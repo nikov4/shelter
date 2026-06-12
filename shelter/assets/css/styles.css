@@ -142,7 +142,7 @@ ul {
   color: var(--color-dark-3xl, #292929);
   border: 2px solid var(--color-primary, #f1cdb3);
   border-radius: 100px;
-  padding: 15px 45px;
+  padding: 13px 44px;
   transition-duration: 0.2s;
   transition-property: all;
   transition-delay: 0.1s;
@@ -483,6 +483,10 @@ li.nav-item span.nav-link-active {
   justify-content: center;
   align-items: center;
   gap: 25px;
+}
+
+.pet-name {
+  padding-top: 3px;
 }
 
 .pet-image {
