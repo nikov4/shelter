@@ -6,6 +6,7 @@
   --color-dark-m: #b2b2b2;
   --color-dark-l: #545454;
   --color-dark-xl: #4c4c4c;
+  --color-dark-3xl: #292929;
   --color-light: #ffffff;
   --color-light-s: #fafafa;
   --color-light-xl: #fff;
@@ -48,8 +49,17 @@ ul {
   margin-left: auto;
   margin-right: auto;
   overflow: clip;
-  background: #333;
+  /*background: #333;*/
   /* background: var(--color-light, #fff);*/
+}
+
+.header-h1 {
+  color: var(--color-light-xl, #fff);
+  font-family: Georgia;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 57.2px */
 }
 
 .header-h2 {
@@ -117,6 +127,32 @@ ul {
   font-weight: 400;
   line-height: 110%; /* 16.5px */
   letter-spacing: 0.9px;
+}
+
+.pet-button {
+  font-family: Georgia;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 22.1px */
+  letter-spacing: 1.02px;
+  background-color: var(--color-light-xl, #fff);
+  color: var(--color-dark-3xl, #292929);
+  border-radius: 100px;
+  padding: 15px 45px;
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.pet-button:hover {
+  background-color: var(--color-primary, #f1cdb3);
+}
+
+.color-dark-s {
+  color: #cdcdcd;
 }
 
 /* Header */
@@ -254,4 +290,79 @@ span.nav-link-active::before {
 
 li.nav-item span.nav-link-active {
   cursor: default;
+}
+
+/* Start */
+
+.section-start {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: flex-start;
+  height: 100%;
+  position: relative;
+}
+
+.start-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  height: 908px;
+  /*background: url(../images/start-screen-gradient-background.png), linear-gradient(90deg, #5b483a 0%, #262425 100%) no-repeat;*/
+  background:
+    url(../images/start-screen-gradient-background.png),
+    radial-gradient(237.5% 111.8% at 0% 0%, #5b483a 0%, #262425 100%) no-repeat;
+}
+
+.start-container {
+  margin-top: 60px;
+  margin-bottom: 243px;
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+}
+
+.start-content-container {
+  width: 460px;
+  margin-top: 163px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 42px;
+  margin-left: 40px;
+}
+
+.start-header {
+  width: 310px;
+  color: var(--color-light-xl, #fff);
+}
+
+.start-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+}
+
+.start-button {
+  color: var(--color-dark-3xl, #292929);
+  background-color: var(--color-primary, #f1cdb3);
+}
+
+.start-button:hover {
+  background-color: var(--color-light-xl, #fff);
+}
+
+.start-image-container {
+  width: 698px;
+  height: 728px;
+  max-width: 698px;
+  max-height: 728px;
+  background: url(../images/start-screen-puppy.png) no-repeat;
 }
