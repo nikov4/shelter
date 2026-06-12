@@ -718,6 +718,7 @@ span.nav-link-active::before {
 }
 
 .footer-location-container {
+  margin-left: 80px;
   padding-top: 16px;
   width: 320px;
   display: flex;
@@ -767,6 +768,7 @@ span.nav-link-active::before {
 }
 
 .location-icon {
+  min-width: 22px;
   width: 22px;
   height: 32px;
   background: url(../icons/icon-location.svg) no-repeat;
