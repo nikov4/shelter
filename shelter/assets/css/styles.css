@@ -258,6 +258,7 @@ a.nav-link:active {
   transition-timing-function: ease-in-out;
 }
 
+/*
 a.nav-link::before {
   content: "";
   position: absolute;
@@ -274,6 +275,11 @@ a.nav-link::before {
 a.nav-link:hover::before {
   color: var(--color-light-s, #fafafa);
   background-color: var(--color-primary);
+}
+*/
+
+a.nav-link:hover {
+  color: var(--color-light-s, #fafafa);
 }
 
 span.nav-link {
@@ -299,6 +305,10 @@ span.nav-link::before {
 
 span.nav-link-active::before {
   background-color: var(--color-primary);
+}
+
+span.nav-link-active {
+  color: var(--color-light-s, #fafafa);
 }
 
 /* Start */
