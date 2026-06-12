@@ -372,8 +372,11 @@ li.nav-item span.nav-link-active {
 
 /* About */
 
-.about-container {
+.section-about {
   padding: 80px 40px 100px 40px;
+}
+
+.about-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
