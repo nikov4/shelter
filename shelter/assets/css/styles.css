@@ -262,7 +262,7 @@ a.nav-link:active {
 a.nav-link::before {
   content: "";
   position: absolute;
-  top: 20px;
+  top: 21px;
   height: 3px;
   width: stretch;
   background-color: transparent;
@@ -286,7 +286,7 @@ span.nav-link::before {
   content: "";
   position: absolute;
   display: inline-block;
-  top: 23px;
+  top: 24px;
   left: 0;
   right: 0;
   height: 3px;
