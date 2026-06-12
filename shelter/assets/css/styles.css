@@ -355,6 +355,7 @@ li.nav-item span.nav-link-active {
 .start-button {
   color: var(--color-dark-3xl, #292929);
   background-color: var(--color-primary, #f1cdb3);
+  border: 2px solid transparent;
 }
 
 .start-button:hover {
