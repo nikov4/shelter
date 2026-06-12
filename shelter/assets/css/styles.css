@@ -542,7 +542,7 @@ li.nav-item span.nav-link-active {
 /* Help */
 
 .section-help {
-  padding: 85px 40px 100px 40px;
+  padding: 82px 40px 100px 40px;
 }
 
 .help-container {
@@ -564,7 +564,7 @@ li.nav-item span.nav-link-active {
   justify-content: center;
   align-items: center;
   column-gap: 120px;
-  row-gap: 52px;
+  row-gap: 53px;
   flex-wrap: wrap;
 }
 
