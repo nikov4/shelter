@@ -628,6 +628,7 @@ li.nav-item span.nav-link-active {
 
 .section-donation {
   padding: 75px 182px 100px 183px;
+  background: var(--color-light-l, #f6f6f6);
 }
 
 .donation-container {
