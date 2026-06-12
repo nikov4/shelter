@@ -146,10 +146,9 @@ ul {
   transition-property: all;
   transition-delay: 0.1s;
   transition-timing-function: ease-in-out;
-  cursor: pointer;
 }
 
-.pet-button:hover {
+.pet-slide:hover .pet-button-container .pet-button {
   background-color: var(--color-primary, #f1cdb3);
 }
 
@@ -486,6 +485,15 @@ span.nav-link-active::before {
   justify-content: center;
   align-items: center;
   gap: 25px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+
+.pet-slide:hover {
+  background-color: var(--color-light-xl, #fff);
 }
 
 .pet-name {
@@ -497,8 +505,7 @@ span.nav-link-active::before {
   height: 270px;
   max-width: 270px;
   max-height: 270px;
-  background-color: var(--color-light-xl, #fff);
-  background-size: cover;
+  background-color: var(--color-light-xl, #fff) cover;
 }
 
 .pet-image-1 {
