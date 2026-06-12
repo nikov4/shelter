@@ -79,7 +79,7 @@ ul {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 130%; /* 45.5px */
+  line-height: 115%; /* 23px */
   letter-spacing: 1.2px;
 }
 
@@ -156,6 +156,10 @@ ul {
 
 .color-dark-s {
   color: #cdcdcd;
+}
+
+.color-dark-l {
+  color: #545454;
 }
 
 /* Header */
@@ -607,4 +611,66 @@ li.nav-item span.nav-link-active {
 
 .help-image-9 {
   background: url(../icons/icon-sleeping-area.svg) no-repeat;
+}
+
+/* Donation */
+
+.section-donation {
+  padding: 80px 182px 100px 183px;
+}
+
+.donation-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.donation-image-container {
+  margin-top: 15px;
+}
+
+.donation-image {
+  width: 506px;
+  height: 261px;
+  max-width: 506px;
+  max-height: 261px;
+  background: url(../images/donation-dog.png) no-repeat;
+}
+
+.donation-content-container {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.donation-header {
+  margin-top0: 2px;
+  width: 300px;
+}
+
+.donation-card-container {
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  border-radius: 9px;
+  background: var(--color-primary, #f1cdb3);
+}
+
+.card-image {
+  width: 30px;
+  height: 23px;
+  background: url(../icons/credit-card.svg) no-repeat;
+}
+
+.donation-paragraph {
+  letter-spacing: 0.9px;
 }
