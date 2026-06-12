@@ -538,7 +538,7 @@ li.nav-item span.nav-link-active {
 /* Help */
 
 .section-help {
-  padding: 80px 40px 100px 40px;
+  padding: 85px 40px 100px 40px;
 }
 
 .help-container {
@@ -649,7 +649,6 @@ li.nav-item span.nav-link-active {
 }
 
 .donation-header {
-  margin-top0: 2px;
   width: 300px;
 }
 
