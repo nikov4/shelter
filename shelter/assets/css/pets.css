@@ -98,9 +98,17 @@ span.nav-link-active {
 
 .control-active {
   background: var(--color-primary, #f1cdb3);
+  cursor: default;
 }
 
-.control-inactive {
+.slider-control:hover {
+  background: var(--color-primary, #f1cdb3);
+}
+
+.control-inactive,
+.control-inactive:hover {
   color: var(--color-dark-s, #cdcdcd);
   border: 2px solid var(--color-dark-s, #cdcdcd);
+  background: transparent;
+  cursor: default;
 }

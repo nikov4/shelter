@@ -478,14 +478,29 @@ span.nav-link-active {
   height: 52px;
   border-radius: 100px;
   border: 2px solid var(--color-primary, #f1cdb3);
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.slider-control:hover {
+  background-color: var(--color-primary, #f1cdb3);
 }
 
 .slider-control-left {
-  background: url(../icons/arrow-left.svg) center no-repeat;
+  background-image: url(../icons/arrow-left.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
 }
 
 .slider-control-right {
-  background: url(../icons/arrow-right.svg) center no-repeat;
+  background-image: url(../icons/arrow-right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
 }
 
 .pets-slider {
