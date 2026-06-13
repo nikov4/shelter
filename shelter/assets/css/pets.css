@@ -40,3 +40,49 @@ a.nav-link:hover {
 span.nav-link-active {
   color: var(--color-light-3xl, #292929);
 }
+
+/* Pet cards */
+
+.section-cards {
+  padding: 80px 40px 100px 40px;
+  background: var(--color-light-l, #f6f6f6);
+}
+
+.cards-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cards-container {
+  padding: 45px 0;
+}
+
+.pets-slider {
+  padding: 15px 0;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 30px;
+}
+
+.pet-image-4 {
+  background: url(../images/pets-sophia.png) no-repeat;
+}
+
+.pet-image-5 {
+  background: url(../images/pets-timmy.png) no-repeat;
+}
+
+.pet-image-6 {
+  background: url(../images/pets-charly.png) no-repeat;
+}
+
+.pet-image-7 {
+  background: url(../images/pets-scarlett.png) no-repeat;
+}
+
+.pet-image-8 {
+  background: url(../images/pets-freddie.png) no-repeat;
+}
