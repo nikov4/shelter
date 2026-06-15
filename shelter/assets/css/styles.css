@@ -1,6 +1,7 @@
 :root {
   --page-width: 1280px;
   --color-primary: #f1cdb3;
+  --color-primary-light: #fddcc4;
   --color-dark: #292929;
   --color-dark-s: #cdcdcd;
   --color-dark-m: #b2b2b2;
@@ -392,7 +393,7 @@ span.nav-link-active {
 }
 
 .start-button:hover {
-  background-color: var(--color-light-xl, #fff);
+  background-color: var(--color-primary-light, #fddcc4);
 }
 
 .start-image-container {
@@ -594,8 +595,8 @@ span.nav-link-active {
 }
 
 .pets-button:hover {
-  background-color: var(--color-light-xl, #fff);
-  border: 2px solid var(--color-primary, #f1cdb3);
+  background-color: var(--color-primary-light, #fddcc4);
+  border: 2px solid var(--color-primary-light, #fddcc4);
 }
 
 /* Help */
@@ -734,6 +735,14 @@ span.nav-link-active {
   gap: 15px;
   border-radius: 9px;
   background: var(--color-primary, #f1cdb3);
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+
+.donation-card-container:hover {
+  background: var(--color-primary-light, #fddcc4);
 }
 
 .card-image {
