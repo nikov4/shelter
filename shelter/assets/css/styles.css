@@ -446,7 +446,7 @@ span.nav-link-active {
 /* Pets */
 
 .section-pets {
-  padding: 80px 40px 100px 40px;
+  width: 100%;
   background: var(--color-light-l, #f6f6f6);
 }
 
@@ -454,7 +454,7 @@ span.nav-link-active {
   max-width: var(--page-width);
   margin-left: auto;
   margin-right: auto;
-
+  padding: 80px 40px 100px 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -601,10 +601,14 @@ span.nav-link-active {
 /* Help */
 
 .section-help {
-  padding: 82px 40px 100px 40px;
+  width: 100%;
 }
 
 .help-container {
+  padding: 82px 40px 100px 40px;
+  max-width: var(--page-width);
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
