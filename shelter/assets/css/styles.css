@@ -45,12 +45,13 @@ ul {
 }
 
 .container {
+  /*
   max-width: var(--page-width);
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  */
   overflow: clip;
-  /*background: #333;*/
 }
 
 .header-h1 {
@@ -171,6 +172,9 @@ ul {
 /* Header */
 
 .header {
+  max-width: var(--page-width);
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -314,6 +318,9 @@ span.nav-link-active {
 /* Start */
 
 .section-start {
+  max-width: var(--page-width);
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30px;
   width: 100%;
   display: flex;
@@ -399,6 +406,9 @@ span.nav-link-active {
 /* About */
 
 .section-about {
+  max-width: var(--page-width);
+  margin-left: auto;
+  margin-right: auto;
   padding: 80px 40px 100px 40px;
 }
 
@@ -436,11 +446,15 @@ span.nav-link-active {
 /* Pets */
 
 .section-pets {
-  padding: 80px 40px 100px 40px;
+  width: 100%;
   background: var(--color-light-l, #f6f6f6);
 }
 
 .pets-container {
+  max-width: var(--page-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 40px 100px 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -587,10 +601,14 @@ span.nav-link-active {
 /* Help */
 
 .section-help {
-  padding: 82px 40px 100px 40px;
+  width: 100%;
 }
 
 .help-container {
+  padding: 82px 40px 100px 40px;
+  max-width: var(--page-width);
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -665,11 +683,15 @@ span.nav-link-active {
 /* Donation */
 
 .section-donation {
-  padding: 75px 182px 100px 183px;
+  width: 100%;
   background: var(--color-light-l, #f6f6f6);
 }
 
 .donation-container {
+  padding: 75px 182px 100px 183px;
+  max-width: var(--page-width);
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -729,7 +751,6 @@ span.nav-link-active {
 .footer-container {
   height: 350px;
   /*padding: 56px 40px 0 40px;*/
-  padding: 40px 40px 0 40px;
   /* 
   background:
     url(../images/start-screen-gradient-background.png),
@@ -748,6 +769,10 @@ span.nav-link-active {
 }
 
 .footer-content-container {
+  padding: 40px 40px 0 40px;
+  max-width: var(--page-width);
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
