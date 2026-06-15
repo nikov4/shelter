@@ -43,9 +43,16 @@ span.nav-link-active {
 
 /* Pet cards */
 
+.main {
+  width: 100%;
+  background: var(--color-light-l, #f6f6f6);
+}
+
 .section-cards {
   padding: 80px 40px 100px 40px;
-  background: var(--color-light-l, #f6f6f6);
+  max-width: var(--page-width);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cards-header {
