@@ -595,8 +595,8 @@ span.nav-link-active {
 }
 
 .pets-button:hover {
-  background-color: var(--color-light-xl, #fff);
-  border: 2px solid var(--color-primary, #f1cdb3);
+  background-color: var(--color-primary-light, #fddcc4);
+  border: 2px solid var(--color-primary-light, #fddcc4);
 }
 
 /* Help */
