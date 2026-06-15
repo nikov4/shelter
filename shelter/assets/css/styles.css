@@ -1,6 +1,7 @@
 :root {
   --page-width: 1280px;
   --color-primary: #f1cdb3;
+  --color-primary-light: #fddcc4;
   --color-dark: #292929;
   --color-dark-s: #cdcdcd;
   --color-dark-m: #b2b2b2;
@@ -392,7 +393,7 @@ span.nav-link-active {
 }
 
 .start-button:hover {
-  background-color: var(--color-light-xl, #fff);
+  background-color: var(--color-primary-light, #fddcc4);
 }
 
 .start-image-container {
