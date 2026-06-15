@@ -751,7 +751,6 @@ span.nav-link-active {
 .footer-container {
   height: 350px;
   /*padding: 56px 40px 0 40px;*/
-  padding: 40px 40px 0 40px;
   /* 
   background:
     url(../images/start-screen-gradient-background.png),
@@ -770,6 +769,10 @@ span.nav-link-active {
 }
 
 .footer-content-container {
+  padding: 40px 40px 0 40px;
+  max-width: var(--page-width);
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
