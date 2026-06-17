@@ -12,15 +12,6 @@
   color: var(--color-light-3xl, #292929);
 }
 
-.nav-links-container {
-  margin-top: 4px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 35px;
-}
-
 .nav-item {
   color: var(--color-dark-l, #545454);
 }
