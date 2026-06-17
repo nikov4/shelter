@@ -1,0 +1,7 @@
+/* burger */
+
+@media (max-width: 767px) {
+  .burger-line {
+    background-color: #000;
+  }
+}
