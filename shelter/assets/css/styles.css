@@ -198,8 +198,12 @@ ul {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 30px 40px 0 40px;
-  gap: 573px;
+  /*margin: 30px 40px 0 40px;*/
+  margin-top: 30px;
+  margin-left: clamp(30px, calc(0px + 10 * ((100vw - 768px) / (1280 - 768))), 40px);
+  margin-right: clamp(30px, calc(0px + 10 * ((100vw - 768px) / (1280 - 768))), 40px);
+  /*gap: 573px;*/
+  gap: clamp(81px, calc(0px + 492 * ((100vw - 768px) / (1280 - 768))), 573px);
 }
 
 .title-container {
