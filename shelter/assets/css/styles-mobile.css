@@ -51,4 +51,32 @@
     width: clamp(260px, calc(260px + 309 * ((100vw - 320px) / (768 - 320))), 569px);
     height: clamp(272px, calc(272px + 321 * ((100vw - 320px) / (768 - 320))), 593px);
   }
+
+  .section-about {
+    margin-top: 1000px;
+    max-width: var(--page-width-tablet);
+    padding: 0 0 100px 0;
+  }
+
+  .about-container {
+    padding-top: 138px;
+    align-self: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .about-content-container {
+    width: 430px;
+    align-self: center;
+  }
+
+  .about-image-container {
+    align-self: center;
+    margin-left: 0px;
+  }
+
+  .about-header {
+    max-width: 370px;
+  }
 }
