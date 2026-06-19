@@ -323,31 +323,12 @@ span.nav-link-active {
 /* Start */
 
 .section-start {
-  max-width: var(--page-width);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: flex-start;
-  height: 100%;
-  position: relative;
-}
-
-.start-overlay {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   z-index: -1;
-  height: 908px;
-  /*
-  background:
-    url(../images/start-screen-gradient-background.png),
-    radial-gradient(237.5% 111.8% at 0% 0%, #5b483a 0%, #262425 100%) no-repeat;
-  */
   background-image: url(../images/noise_transparent.png), radial-gradient(237.5% 111.8% at 0% 0%, #5b483a 0%, #262425 100%);
   background-color: var(--color-primary, #211f20);
   background-position:
@@ -357,10 +338,18 @@ span.nav-link-active {
     110px 110px,
     auto;
   background-repeat: repeat, no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: flex-start;
+  overflow: clip;
 }
 
 .start-container {
-  margin-top: 60px;
+  width: var(--page-width);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 180px;
   display: flex;
   flex-direction: row;
   gap: 42px;
@@ -401,16 +390,25 @@ span.nav-link-active {
 }
 
 .start-image-container {
-  width: 698px;
-  height: 728px;
+  width: 100%;
   max-width: 698px;
   max-height: 728px;
-  background: url(../images/start-screen-puppy.png) no-repeat;
+  align-self: flex-end;
+}
+
+.start-image {
+  width: 698px;
+  height: 728px;
+  background-image: url(../images/start-screen-puppy.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
 }
 
 /* About */
 
 .section-about {
+  margin-top: 728px;
   max-width: var(--page-width);
   margin-left: auto;
   margin-right: auto;
