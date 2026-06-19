@@ -196,14 +196,14 @@ ul {
   height: 60px;
   max-width: 1200px;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   /*margin: 30px 40px 0 40px;*/
   margin-top: 30px;
   margin-left: clamp(30px, calc(0px + 10 * ((100vw - 768px) / (1280 - 768))), 40px);
   margin-right: clamp(30px, calc(0px + 10 * ((100vw - 768px) / (1280 - 768))), 40px);
   /*gap: 573px;*/
-  gap: clamp(81px, calc(0px + 492 * ((100vw - 768px) / (1280 - 768))), 573px);
+  /*gap: clamp(81px, calc(0px + 492 * ((100vw - 768px) / (1280 - 768))), 573px);*/
 }
 
 .title-container {
@@ -238,9 +238,9 @@ ul {
   margin-top: 4px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
-  gap: 35px;
+  gap: 36px;
 }
 
 .nav-item {
