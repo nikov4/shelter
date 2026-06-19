@@ -92,4 +92,17 @@
   .pet-card-03 {
     display: none;
   }
+
+  .help-container {
+    padding: 82px 69px 100px 69px;
+  }
+
+  .help-items-container {
+    column-gap: 60px;
+    row-gap: 55px;
+  }
+
+  .help-item {
+    width: 170px;
+  }
 }
