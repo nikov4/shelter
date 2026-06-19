@@ -1,5 +1,6 @@
 :root {
   --page-width: 1280px;
+  --page-width-tablet: 768px;
   --color-primary: #f1cdb3;
   --color-primary-light: #fddcc4;
   --color-dark: #292929;
@@ -352,11 +353,13 @@ span.nav-link-active {
   margin-top: 180px;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   gap: 42px;
 }
 
 .start-content-container {
-  width: 460px;
+  /*width: 460px;*/
+  width: clamp(300px, calc(300px + 160 * ((100vw - 768px) / (1280 - 768))), 460px);
   margin-top: 163px;
   display: flex;
   flex-direction: column;
@@ -390,19 +393,26 @@ span.nav-link-active {
 }
 
 .start-image-container {
+  align-self: flex-end;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
   width: 100%;
   max-width: 698px;
   max-height: 728px;
-  align-self: flex-end;
 }
 
 .start-image {
+  /*
   width: 698px;
   height: 728px;
+  */
+  width: clamp(569px, calc(569px + 298 * ((100vw - 768px) / (1280 - 768))), 698px);
+  height: clamp(593px, calc(593px + 300 * ((100vw - 768px) / (1280 - 768))), 728px);
   background-image: url(../images/start-screen-puppy.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: bottom;
+  background-position: bottom center;
 }
 
 /* About */

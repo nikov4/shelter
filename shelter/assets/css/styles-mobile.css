@@ -9,3 +9,46 @@
     display: block;
   }
 }
+
+/* tablet */
+
+@media (max-width: 768px) {
+  .section-start {
+    justify-content: center;
+  }
+
+  .start-container {
+    max-width: var(--page-width-tablet);
+    margin-top: 150px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    gap: 100px;
+  }
+
+  .start-content-container {
+    width: 460px;
+    margin-top: 0px;
+    align-self: center;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 0px;
+  }
+
+  .start-button-container {
+    align-self: center;
+  }
+
+  .start-image-container {
+    align-self: center;
+    /*margin-left: 140px;*/
+    margin-left: clamp(0px, calc(0px + 140 * ((100vw - 320px) / (768 - 320))), 140px);
+    width: clamp(260px, calc(260px + 309 * ((100vw - 320px) / (768 - 320))), 569px);
+    justify-content: center;
+  }
+
+  .start-image {
+    width: clamp(260px, calc(260px + 309 * ((100vw - 320px) / (768 - 320))), 569px);
+    height: clamp(272px, calc(272px + 321 * ((100vw - 320px) / (768 - 320))), 593px);
+  }
+}
