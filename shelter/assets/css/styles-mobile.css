@@ -79,4 +79,17 @@
   .about-header {
     max-width: 370px;
   }
+
+  .pets-container {
+    max-width: var(--page-width-tablet);
+    padding: 78px 30px 100px 30px;
+  }
+
+  .pets-slider {
+    gap: 40px;
+  }
+
+  .pet-card-03 {
+    display: none;
+  }
 }
