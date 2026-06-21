@@ -1,7 +1,7 @@
 /* Header */
 
 .nav-container {
-  margin: 30px 40px;
+  margin-bottom: 30px;
 }
 
 .title-caption a {
@@ -10,15 +10,6 @@
 
 .subtitle-caption {
   color: var(--color-light-3xl, #292929);
-}
-
-.nav-links-container {
-  margin-top: 4px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 35px;
 }
 
 .nav-item {
@@ -65,13 +56,6 @@ span.nav-link-active {
 
 .cards-container {
   padding: 45px 0;
-}
-
-.pets-slider {
-  padding: 16px 0;
-  flex-wrap: wrap;
-  column-gap: 40px;
-  row-gap: 30px;
 }
 
 .pet-image-4 {

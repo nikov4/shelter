@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.cdnfonts.com/css/georgia" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/modern-normalize.css">
+  <link rel="stylesheet" href="./assets/css/burger.css">
   <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/styles-mobile.css">
   <link rel="icon" href="./favicon.ico">
   <title>Cozy House - Main</title>
 </head>
@@ -15,7 +17,6 @@
 <body>
 
   <div class="container">
-    <div class="start-overlay"></div>
 
     <header class="header">
       <nav class="nav">
@@ -30,6 +31,13 @@
             <li class="nav-item"><a href="./index.html#help" class="nav-link">Help the shelter</a></li>
             <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
           </ul>
+          <div class="burger-button-container">
+            <div class="burger-button">
+              <span class="burger-line burger-line-top"></span>
+              <span class="burger-line burger-line-center"></span>
+              <span class="burger-line burger-line-bottom"></span>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -84,7 +92,7 @@
 
             <div class="pets-slider">
 
-              <div class="pet-card">
+              <div class="pet-card pet-card-01">
                 <div class="pet-image pet-image-1"></div>
                 <h3 class="header-h3 pet-name">Katrine</h3>
                 <div class="pet-button-container">
@@ -92,7 +100,7 @@
                 </div>
               </div>
 
-              <div class="pet-card">
+              <div class="pet-card pet-card-02">
                 <div class="pet-image pet-image-2"></div>
                 <h3 class="header-h3 pet-name">Jennifer</h3>
                 <div class="pet-button-container">
@@ -100,7 +108,7 @@
                 </div>
               </div>
 
-              <div class="pet-card">
+              <div class="pet-card pet-card-03">
                 <div class="pet-image pet-image-3"></div>
                 <h3 class="header-h3 pet-name">Woody</h3>
                 <div class="pet-button-container">
@@ -218,9 +226,9 @@
                   target="_blank">18 South Park, London</a></p>
             </div>
           </div>
-          <div class="footer-image-container">
-            <div class="footer-image"></div>
-          </div>
+        </div>
+        <div class="footer-image-container">
+          <div class="footer-image"></div>
         </div>
       </div>
 
@@ -229,6 +237,7 @@
   </div>
 
   <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/burger.js"></script>
 
 </body>
 
