@@ -769,15 +769,12 @@ span.nav-link-active {
 
 /* Footer */
 
-.footer-container {
-  height: 350px;
-  /*padding: 56px 40px 0 40px;*/
-  /* 
-  background:
-    url(../images/start-screen-gradient-background.png),
-    radial-gradient(237.5% 111.8% at 0% 0%, #5b483a 0%, #262425 100%) no-repeat;
-  */
-  /*background-image: url(../images/noise_transparent.png), radial-gradient(549.89% 73.65% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%);*/
+.footer {
+  min-height: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
   background-image: url(../images/noise_transparent.png), linear-gradient(to right, #513d2f 10%, #1a1a1c 100%);
   background-color: #211f20;
   background-position:
@@ -789,21 +786,30 @@ span.nav-link-active {
   background-repeat: repeat, no-repeat;
 }
 
-.footer-content-container {
+.footer-container {
   padding: 40px 40px 0 40px;
-  max-width: var(--page-width);
-  margin-left: auto;
-  margin-right: auto;
+  width: var(--page-width);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  /*gap: 80px;*/
+  gap: clamp(40px, calc(40px + 40 * ((100vw - 1200px) / (1280 - 1200))), 80px);
+}
+
+.footer-content-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 80px;
+  /*gap: 80px;*/
+  gap: clamp(40px, calc(40px + 40 * ((100vw - 1200px) / (1280 - 1200))), 80px);
 }
 
 .footer-contacts-container {
   padding-top: 16px;
   width: 280px;
+  min-width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -811,9 +817,11 @@ span.nav-link-active {
 }
 
 .footer-location-container {
-  margin-left: 80px;
+  /*margin-left: 80px;*/
+  margin-left: clamp(30px, calc(30px + 50 * ((100vw - 768px) / (1280 - 768))), 80px);
   padding-top: 16px;
   width: 320px;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -868,11 +876,13 @@ span.nav-link-active {
 }
 
 .footer-image-container {
+  /*
   padding-left: 60px;
-  width: 360px;
+  padding-left: clamp(30px, 30px + calc(30 * ((100vw - 1200px) / (1280 - 1200))), 60px);
+  */
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-start;
 }
 
@@ -881,8 +891,8 @@ span.nav-link-active {
   width: 300px;
   height: 310px;
   background-image: url(../images/footer-puppy.png);
-  background-position: top right;
-  background-size: cover;
+  background-position: bottom right;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
