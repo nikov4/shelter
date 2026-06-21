@@ -1,5 +1,6 @@
 :root {
   --page-width: 1280px;
+  --page-width-tablet: 768px;
   --color-primary: #f1cdb3;
   --color-primary-light: #fddcc4;
   --color-dark: #292929;
@@ -47,12 +48,12 @@ ul {
 
 .container {
   /*
-  max-width: var(--page-width);
+  max-width: ;
   position: relative;
   margin-left: auto;
   margin-right: auto;
   */
-  overflow: clip;
+  overflow: hidden;
 }
 
 .header-h1 {
@@ -196,10 +197,14 @@ ul {
   height: 60px;
   max-width: 1200px;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
-  margin: 30px 40px 0 40px;
-  gap: 573px;
+  /*margin: 30px 40px 0 40px;*/
+  margin-top: 30px;
+  margin-left: clamp(30px, calc(0px + 10 * ((100vw - 768px) / (1280 - 768))), 40px);
+  margin-right: clamp(30px, calc(0px + 10 * ((100vw - 768px) / (1280 - 768))), 40px);
+  /*gap: 573px;*/
+  /*gap: clamp(81px, calc(0px + 492 * ((100vw - 768px) / (1280 - 768))), 573px);*/
 }
 
 .title-container {
@@ -234,9 +239,9 @@ ul {
   margin-top: 4px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
-  gap: 35px;
+  gap: 36px;
 }
 
 .nav-item {
@@ -319,31 +324,12 @@ span.nav-link-active {
 /* Start */
 
 .section-start {
-  max-width: var(--page-width);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: flex-start;
-  height: 100%;
-  position: relative;
-}
-
-.start-overlay {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   z-index: -1;
-  height: 908px;
-  /*
-  background:
-    url(../images/start-screen-gradient-background.png),
-    radial-gradient(237.5% 111.8% at 0% 0%, #5b483a 0%, #262425 100%) no-repeat;
-  */
   background-image: url(../images/noise_transparent.png), radial-gradient(237.5% 111.8% at 0% 0%, #5b483a 0%, #262425 100%);
   background-color: var(--color-primary, #211f20);
   background-position:
@@ -353,17 +339,27 @@ span.nav-link-active {
     110px 110px,
     auto;
   background-repeat: repeat, no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: flex-start;
+  overflow: clip;
 }
 
 .start-container {
-  margin-top: 60px;
+  width: var(--page-width);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 180px;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   gap: 42px;
 }
 
 .start-content-container {
-  width: 460px;
+  /*width: 460px;*/
+  width: clamp(300px, calc(300px + 160 * ((100vw - 768px) / (1280 - 768))), 460px);
   margin-top: 163px;
   display: flex;
   flex-direction: column;
@@ -397,16 +393,32 @@ span.nav-link-active {
 }
 
 .start-image-container {
-  width: 698px;
-  height: 728px;
+  align-self: flex-end;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
   max-width: 698px;
   max-height: 728px;
-  background: url(../images/start-screen-puppy.png) no-repeat;
+}
+
+.start-image {
+  /*
+  width: 698px;
+  height: 728px;
+  */
+  width: clamp(569px, calc(569px + 298 * ((100vw - 768px) / (1280 - 768))), 698px);
+  height: clamp(593px, calc(593px + 300 * ((100vw - 768px) / (1280 - 768))), 728px);
+  background-image: url(../images/start-screen-puppy.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
 }
 
 /* About */
 
 .section-about {
+  margin-top: 818px;
   max-width: var(--page-width);
   margin-left: auto;
   margin-right: auto;
@@ -757,15 +769,12 @@ span.nav-link-active {
 
 /* Footer */
 
-.footer-container {
-  height: 350px;
-  /*padding: 56px 40px 0 40px;*/
-  /* 
-  background:
-    url(../images/start-screen-gradient-background.png),
-    radial-gradient(237.5% 111.8% at 0% 0%, #5b483a 0%, #262425 100%) no-repeat;
-  */
-  /*background-image: url(../images/noise_transparent.png), radial-gradient(549.89% 73.65% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%);*/
+.footer {
+  min-height: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
   background-image: url(../images/noise_transparent.png), linear-gradient(to right, #513d2f 10%, #1a1a1c 100%);
   background-color: #211f20;
   background-position:
@@ -777,21 +786,30 @@ span.nav-link-active {
   background-repeat: repeat, no-repeat;
 }
 
-.footer-content-container {
+.footer-container {
   padding: 40px 40px 0 40px;
-  max-width: var(--page-width);
-  margin-left: auto;
-  margin-right: auto;
+  width: var(--page-width);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  /*gap: 80px;*/
+  gap: clamp(40px, calc(40px + 40 * ((100vw - 1200px) / (1280 - 1200))), 80px);
+}
+
+.footer-content-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 80px;
+  /*gap: 80px;*/
+  gap: clamp(40px, calc(40px + 40 * ((100vw - 1200px) / (1280 - 1200))), 80px);
 }
 
 .footer-contacts-container {
   padding-top: 16px;
   width: 280px;
+  min-width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -799,9 +817,11 @@ span.nav-link-active {
 }
 
 .footer-location-container {
-  margin-left: 80px;
+  /*margin-left: 80px;*/
+  margin-left: clamp(30px, calc(30px + 50 * ((100vw - 768px) / (1280 - 768))), 80px);
   padding-top: 16px;
   width: 320px;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -856,11 +876,13 @@ span.nav-link-active {
 }
 
 .footer-image-container {
+  /*
   padding-left: 60px;
-  width: 360px;
+  padding-left: clamp(30px, 30px + calc(30 * ((100vw - 1200px) / (1280 - 1200))), 60px);
+  */
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-start;
 }
 
@@ -869,8 +891,8 @@ span.nav-link-active {
   width: 300px;
   height: 310px;
   background-image: url(../images/footer-puppy.png);
-  background-position: top right;
-  background-size: cover;
+  background-position: bottom right;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
