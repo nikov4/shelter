@@ -58,13 +58,6 @@ span.nav-link-active {
   padding: 45px 0;
 }
 
-.pets-slider {
-  padding: 16px 0;
-  flex-wrap: wrap;
-  column-gap: 40px;
-  row-gap: 30px;
-}
-
 .pet-image-4 {
   background: url(../images/pets-sophia.png) no-repeat;
 }

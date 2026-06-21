@@ -5,3 +5,32 @@
     background-color: #000;
   }
 }
+
+/* tablet */
+
+@media (max-width: 768px) {
+  .section-cards {
+    padding: 80px 30px 75px 30px;
+  }
+
+  .cards-container {
+    padding: 15px 0 25px 0;
+  }
+
+  .pet-card-03 {
+    display: flex;
+  }
+
+  .pet-card-07,
+  .pet-card-08,
+  .pet-card-09 {
+    display: none;
+  }
+
+  .pets-slider {
+    padding: 16px 0;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 32px;
+  }
+}
