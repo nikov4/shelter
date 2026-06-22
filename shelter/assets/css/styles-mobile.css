@@ -91,11 +91,11 @@
 
   .section-about {
     margin-top: 1000px;
-    max-width: var(--page-width-tablet);
     padding: 0 0 100px 0;
   }
 
   .about-container {
+    max-width: var(--page-width-tablet);
     padding-top: 138px;
     align-self: center;
     flex-direction: column-reverse;
@@ -104,7 +104,7 @@
   }
 
   .about-content-container {
-    width: 430px;
+    max-width: 430px;
     align-self: center;
   }
 
