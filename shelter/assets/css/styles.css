@@ -504,15 +504,11 @@ span.nav-link-active {
 .slider-controls {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .slider-control {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   width: 52px;
   height: 52px;
   border-radius: 100px;
@@ -542,12 +538,17 @@ span.nav-link-active {
   background-color: transparent;
 }
 
+.slider-controls-justify {
+  justify-content: flex-end;
+}
+
 .pets-slider {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 90px;
+  /*gap: 90px;*/
+  gap: clamp(38px, calc(38px + 52 * ((100vw - 1120px) / (1280 - 1120))), 90px);
 }
 
 .pet-card {
