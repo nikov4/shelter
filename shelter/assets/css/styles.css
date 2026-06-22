@@ -78,11 +78,11 @@ ul {
 .header-h3 {
   color: var(--color-dark-l, #545454);
   font-family: Georgia;
-  font-size: 20px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 400;
-  line-height: 115%; /* 23px */
-  letter-spacing: 1.2px;
+  line-height: 130%; /* 32.5px */
+  letter-spacing: 1.5px;
 }
 
 .header-h4 {
