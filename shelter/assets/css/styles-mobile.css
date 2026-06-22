@@ -10,8 +10,13 @@
   }
 
   .nav-container {
-    margin-left: clamp(20px, calc(10px + 10 * ((100vw - 320px) / (768 - 320))), 30px);
-    margin-right: clamp(20px, calc(10px + 10 * ((100vw - 320px) / (768 - 320))), 30px);
+    margin-left: clamp(20px, calc(20px + 10 * ((100vw - 320px) / (768 - 320))), 30px);
+    margin-right: clamp(20px, calc(20px + 10 * ((100vw - 320px) / (768 - 320))), 30px);
+  }
+
+  .header-h2 {
+    font-size: clamp(25px, calc(25px + 10 * ((100vw - 320px) / (768 - 320))), 35px);
+    letter-spacing: clamp(1.5px, calc(0.6px + 0.6 * ((100vw - 320px) / (768 - 320))), 2.1px);
   }
 }
 
