@@ -465,7 +465,7 @@ span.nav-link-active {
 }
 
 .about-text {
-  max-width: 430px;
+  width: 430px;
 }
 
 /* Pets */

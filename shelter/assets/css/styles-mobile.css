@@ -13,21 +13,30 @@
 /* desktop */
 
 @media (max-width: 1120px) {
+  .about-text {
+    width: 100%;
+    max-width: 430px;
+  }
+
   .pets-slider-container {
     justify-content: center;
   }
+
   .slider-controls {
     justify-content: flex-end;
   }
+
   .slider-controls-justify {
     justify-content: flex-start;
   }
+
   .slider-control {
     /*margin-left: 12px;*/
     margin-left: clamp(12px, calc(12px + 41 * ((100vw - 768px) / (1280 - 768))), 53px);
     /*margin-right: 12px;*/
     margin-right: clamp(12px, calc(12px + 41 * ((100vw - 768px) / (1280 - 768))), 53px);
   }
+
   .pet-card-03 {
     display: none;
   }
