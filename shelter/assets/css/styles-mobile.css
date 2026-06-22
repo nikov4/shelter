@@ -8,6 +8,11 @@
   .burger-button-container {
     display: block;
   }
+
+  .nav-container {
+    margin-left: clamp(20px, calc(10px + 10 * ((100vw - 320px) / (768 - 320))), 30px);
+    margin-right: clamp(20px, calc(10px + 10 * ((100vw - 320px) / (768 - 320))), 30px);
+  }
 }
 
 /* desktop */
