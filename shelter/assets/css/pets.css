@@ -94,12 +94,35 @@ span.nav-link-active {
   gap: 20px;
 }
 
+.paginator-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.paginator-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  border: 2px solid var(--color-primary, #f1cdb3);
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
 .control-active {
   background: var(--color-primary, #f1cdb3);
   cursor: default;
 }
 
-.slider-control:hover {
+.paginator-control:hover {
   background: var(--color-primary, #f1cdb3);
 }
 
