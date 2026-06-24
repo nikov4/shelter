@@ -2,7 +2,7 @@
 
 @media (max-width: 768px) {
   .section-cards {
-    padding: 80px 30px 78px 30px;
+    padding: 80px 30px 77px 30px;
   }
 
   .cards-container {
@@ -32,9 +32,9 @@
   }
 
   .section-cards {
-    /*padding: 80px 30px 75px 30px;*/
+    /*padding: 80px 40px 100px 40px;*/
     padding-top: clamp(41px, calc(41px + 39 * ((100vw - 320px) / (768 - 320))), 80px);
-    padding-bottom: clamp(42px, calc(42px + 53 * ((100vw - 320px) / (768 - 320))), 95px);
+    padding-bottom: clamp(43px, calc(43px + 57 * ((100vw - 320px) / (768 - 320))), 100px);
     padding-left: clamp(10px, calc(10px + 20 * ((100vw - 320px) / (768 - 320))), 30px);
     padding-right: clamp(10px, calc(10px + 20 * ((100vw - 320px) / (768 - 320))), 30px);
   }
