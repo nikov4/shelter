@@ -675,39 +675,57 @@ span.nav-link-active {
 }
 
 .help-image-1 {
-  background: url(../icons/icon-pet-food.svg) no-repeat;
+  background-image: url(../icons/icon-pet-food.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .help-image-2 {
-  background: url(../icons/icon-transportation.svg) no-repeat;
+  background-image: url(../icons/icon-transportation.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .help-image-3 {
-  background: url(../icons/icon-toys.svg) no-repeat;
+  background-image: url(../icons/icon-toys.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .help-image-4 {
-  background: url(../icons/icon-bowls-and-cups.svg) no-repeat;
+  background-image: url(../icons/icon-bowls-and-cups.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .help-image-5 {
-  background: url(../icons/icon-shampoos.svg) no-repeat;
+  background-image: url(../icons/icon-shampoos.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .help-image-6 {
-  background: url(../icons/icon-vitamins.svg) no-repeat;
+  background-image: url(../icons/icon-vitamins.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .help-image-7 {
-  background: url(../icons/icon-medicines.svg) no-repeat;
+  background-image: url(../icons/icon-medicines.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .help-image-8 {
-  background: url(../icons/icon-collars-leashes.svg) no-repeat;
+  background-image: url(../icons/icon-collars-leashes.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .help-image-9 {
-  background: url(../icons/icon-sleeping-area.svg) no-repeat;
+  background-image: url(../icons/icon-sleeping-area.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* Donation */
