@@ -227,6 +227,36 @@
     width: clamp(250px, calc(250px + 100 * ((100vw - 320px) / (768 - 320))), 350px);
   }
 
+  .section-about {
+    margin-top: clamp(622px, calc(622px + 378 * ((100vw - 320px) / (768 - 320))), 1000px);
+    padding: 0px 25px 42px 25px;
+  }
+
+  .about-container {
+    width: 100%;
+    gap: clamp(44px, calc(44px + 36 * ((100vw - 320px) / (768 - 320))), 80px);
+  }
+
+  .about-content-container {
+    align-items: center;
+    gap: 25px;
+  }
+
+  .about-header {
+    width: clamp(250px, calc(250px + 100 * ((100vw - 320px) / (768 - 320))), 350px);
+    text-align: center;
+  }
+
+  .about-text {
+    margin-bottom: -4px;
+    text-align: justify;
+  }
+
+  .about-image {
+    width: clamp(260px, calc(260px + 40 * ((100vw - 320px) / (768 - 320))), 300px);
+    height: clamp(354px, calc(354px + 54 * ((100vw - 320px) / (768 - 320))), 408px);
+  }
+
   .footer {
     flex-direction: column;
     justify-content: center;
