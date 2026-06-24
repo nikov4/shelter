@@ -328,6 +328,59 @@
     letter-spacing: clamp(0.9px, calc(0.9px + 0.3 * ((100vw - 320px) / (768 - 320))), 1.2px);
   }
 
+  .donation-container {
+    width: 100%;
+    /*padding: 74px 192px 100px 192px;*/
+    padding: 36px 20px;
+    align-items: center;
+    gap: clamp(25px, calc(25px + 20 * ((100vw - 320px) / (768 - 320))), 45px);
+  }
+
+  .donation-content-container {
+    width: 100%;
+    gap: 23px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .donation-header {
+    /*max-width: 220px;*/
+    max-width: clamp(220px, calc(220px + 80 * ((100vw - 320px) / (768 - 320))), 300px);
+    text-align: center;
+  }
+
+  .donation-content-container .header-h5 {
+    letter-spacing: 0px;
+  }
+
+  .donation-card-container {
+    max-width: clamp(280px, calc(280px + 70 * ((100vw - 320px) / (768 - 320))), 350px);
+    padding: 10px 15px;
+    gap: 16px;
+    letter-spacing: 0.8px;
+  }
+
+  .donation-card-container a .header-h4 {
+    font-size: clamp(15px, calc(15px + 5 * ((100vw - 320px) / (768 - 320))), 20px);
+    letter-spacing: clamp(0.8px, calc(0.8px + 0.4 * ((100vw - 320px) / (768 - 320))), 1.2px);
+  }
+
+  .donation-content-container .paragraph-s {
+    max-width: clamp(280px, calc(280px + 70 * ((100vw - 320px) / (768 - 320))), 350px);
+    margin-top: -2px;
+    text-align: justify;
+  }
+
+  .donation-image-container {
+    margin-top: 15px;
+    margin-bottom: 6px;
+  }
+
+  .donation-image {
+    width: clamp(260px, calc(260px + 246 * ((100vw - 320px) / (768 - 320))), 506px);
+    height: clamp(136px, calc(136px + 127 * ((100vw - 320px) / (768 - 320))), 261px);
+  }
+
   .footer {
     flex-direction: column;
     justify-content: center;

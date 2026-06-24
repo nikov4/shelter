@@ -754,9 +754,10 @@ span.nav-link-active {
 .donation-image {
   width: 506px;
   height: 261px;
-  max-width: 506px;
-  max-height: 261px;
-  background: url(../images/donation-dog.png) no-repeat;
+  background-image: url(../images/donation-dog.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
 }
 
 .donation-content-container {
