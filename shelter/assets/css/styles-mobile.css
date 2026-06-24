@@ -205,4 +205,66 @@
     font-size: clamp(25px, calc(25px + 10 * ((100vw - 320px) / (768 - 320))), 35px);
     letter-spacing: clamp(1.5px, calc(0.6px + 0.6 * ((100vw - 320px) / (768 - 320))), 2.1px);
   }
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-container {
+    width: 100%;
+    /*    padding: 30px 30px 0 30px;*/
+    padding: 30px 10px 0 10px;
+    gap: clamp(40px, calc(40px + 25 * ((100vw - 320px) / (768 - 320))), 65px);
+    justify-self: center;
+    justify-content: center;
+  }
+
+  .footer-content-container {
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    gap: clamp(40px, calc(40px + 40 * ((100vw - 1200px) / (1280 - 1200))), 80px);
+  }
+
+  .footer-contacts-container {
+    width: 100%;
+    max-width: 280px;
+    padding-top: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-location-container {
+    width: 100%;
+    max-width: 280px;
+    padding: 0 10px;
+    justify-self: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-location-container .header-h2 {
+    max-width: 280px;
+  }
+
+  .footer-location {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .footer-location .header-h4 {
+    text-align: left;
+  }
+
+  .footer-image {
+    width: 260px;
+    height: 269px;
+  }
 }
