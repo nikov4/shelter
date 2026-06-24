@@ -212,7 +212,8 @@
   }
 
   .start-content-container {
-    width: 100%;
+    /*width: 100%;*/
+    width: clamp(300px, calc(300px + 300 * ((100vw - 320px) / (768 - 320))), 600px);
     align-self: center;
     justify-content: center;
     align-items: center;
