@@ -175,7 +175,6 @@
     padding: 74px 192px 100px 192px;
     margin-left: auto;
     margin-right: auto;
-
     max-width: var(--page-width-tablet);
     display: flex;
     flex-direction: column-reverse;
@@ -201,9 +200,185 @@
     margin-right: clamp(20px, calc(20px + 10 * ((100vw - 320px) / (768 - 320))), 30px);
   }
 
+  .header-h1,
   .header-h2 {
     font-size: clamp(25px, calc(25px + 10 * ((100vw - 320px) / (768 - 320))), 35px);
     letter-spacing: clamp(1.5px, calc(0.6px + 0.6 * ((100vw - 320px) / (768 - 320))), 2.1px);
+  }
+
+  .start-container {
+    width: 100%;
+    padding: 0px 10px;
+  }
+
+  .start-content-container {
+    /*width: 100%;*/
+    width: clamp(300px, calc(300px + 300 * ((100vw - 320px) / (768 - 320))), 600px);
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .start-image-container {
+    margin: 4px 0 0 40px;
+  }
+
+  .start-header {
+    width: clamp(250px, calc(250px + 100 * ((100vw - 320px) / (768 - 320))), 350px);
+  }
+
+  .section-about {
+    margin-top: clamp(622px, calc(622px + 378 * ((100vw - 320px) / (768 - 320))), 1000px);
+    padding: 0px 25px 42px 25px;
+  }
+
+  .about-container {
+    width: 100%;
+    gap: clamp(44px, calc(44px + 36 * ((100vw - 320px) / (768 - 320))), 80px);
+  }
+
+  .about-content-container {
+    align-items: center;
+    gap: 25px;
+  }
+
+  .about-header {
+    width: clamp(250px, calc(250px + 100 * ((100vw - 320px) / (768 - 320))), 350px);
+    text-align: center;
+  }
+
+  .about-text {
+    margin-bottom: -4px;
+    text-align: justify;
+  }
+
+  .about-image {
+    width: clamp(260px, calc(260px + 40 * ((100vw - 320px) / (768 - 320))), 300px);
+    height: clamp(354px, calc(354px + 54 * ((100vw - 320px) / (768 - 320))), 408px);
+  }
+
+  .pets-container {
+    max-width: 100%;
+    padding: 40px 40px 42px 40px;
+    gap: 42px;
+  }
+
+  .pets-slider-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 21px;
+  }
+
+  .slider-controls {
+    display: none;
+  }
+
+  .slider-controls-mobile {
+    max-width: 260px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 56px;
+  }
+
+  .pet-card-02 {
+    display: none;
+  }
+
+  .pet-name {
+    padding-top: 4px;
+  }
+
+  .pets-button-container {
+    width: 270px;
+  }
+
+  .help-container {
+    /* padding: 82px 69px 100px 69px;*/
+    padding: 42px 18px 44px 18px;
+    gap: 42px;
+  }
+
+  .help-header {
+    width: clamp(250px, calc(250px + 100 * ((100vw - 320px) / (768 - 320))), 350px);
+    text-align: center;
+  }
+
+  .help-items-container {
+    align-items: flex-end;
+    justify-content: space-around;
+    column-gap: 33.8px;
+    row-gap: 29px;
+  }
+
+  .help-item {
+    width: clamp(125px, calc(125px + 45 * ((100vw - 320px) / (768 - 320))), 170px);
+    gap: 20.2px;
+  }
+
+  .help-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .help-item .header-h4 {
+    font-size: clamp(15px, calc(15px + 5 * ((100vw - 320px) / (768 - 320))), 20px);
+    letter-spacing: clamp(0.9px, calc(0.9px + 0.3 * ((100vw - 320px) / (768 - 320))), 1.2px);
+  }
+
+  .donation-container {
+    width: 100%;
+    /*padding: 74px 192px 100px 192px;*/
+    padding: 36px 20px;
+    align-items: center;
+    gap: clamp(25px, calc(25px + 20 * ((100vw - 320px) / (768 - 320))), 45px);
+  }
+
+  .donation-content-container {
+    width: 100%;
+    gap: 23px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .donation-header {
+    /*max-width: 220px;*/
+    max-width: clamp(220px, calc(220px + 80 * ((100vw - 320px) / (768 - 320))), 300px);
+    text-align: center;
+  }
+
+  .donation-content-container .header-h5 {
+    letter-spacing: 0px;
+  }
+
+  .donation-card-container {
+    max-width: clamp(280px, calc(280px + 70 * ((100vw - 320px) / (768 - 320))), 350px);
+    padding: 10px 15px;
+    gap: 16px;
+    letter-spacing: 0.8px;
+  }
+
+  .donation-card-container a .header-h4 {
+    font-size: clamp(15px, calc(15px + 5 * ((100vw - 320px) / (768 - 320))), 20px);
+    letter-spacing: clamp(0.8px, calc(0.8px + 0.4 * ((100vw - 320px) / (768 - 320))), 1.2px);
+  }
+
+  .donation-content-container .paragraph-s {
+    max-width: clamp(280px, calc(280px + 70 * ((100vw - 320px) / (768 - 320))), 350px);
+    margin-top: -2px;
+    text-align: justify;
+  }
+
+  .donation-image-container {
+    margin-top: 15px;
+    margin-bottom: 6px;
+  }
+
+  .donation-image {
+    width: clamp(260px, calc(260px + 246 * ((100vw - 320px) / (768 - 320))), 506px);
+    height: clamp(136px, calc(136px + 127 * ((100vw - 320px) / (768 - 320))), 261px);
   }
 
   .footer {
@@ -266,5 +441,11 @@
   .footer-image {
     width: 260px;
     height: 269px;
+  }
+}
+
+@media (max-width: 320px) {
+  .help-items-container {
+    justify-content: flex-start;
   }
 }
