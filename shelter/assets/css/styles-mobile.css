@@ -257,6 +257,43 @@
     height: clamp(354px, calc(354px + 54 * ((100vw - 320px) / (768 - 320))), 408px);
   }
 
+  .pets-container {
+    max-width: 100%;
+    padding: 40px 40px 42px 40px;
+    gap: 42px;
+  }
+
+  .pets-slider-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 21px;
+  }
+
+  .slider-controls {
+    display: none;
+  }
+
+  .slider-controls-mobile {
+    max-width: 260px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 56px;
+  }
+
+  .pet-card-02 {
+    display: none;
+  }
+
+  .pet-name {
+    padding-top: 4px;
+  }
+
+  .pets-button-container {
+    width: 270px;
+  }
+
   .footer {
     flex-direction: column;
     justify-content: center;

@@ -508,6 +508,10 @@ span.nav-link-active {
   align-items: center;
 }
 
+.slider-controls-mobile {
+  display: none;
+}
+
 .slider-control {
   width: 52px;
   height: 52px;
