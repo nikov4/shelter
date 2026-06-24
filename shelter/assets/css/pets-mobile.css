@@ -22,6 +22,10 @@
   .pets-slider {
     row-gap: 31px;
   }
+
+  .pets-navigation {
+    margin-top: 2px;
+  }
 }
 
 /* mobile */
