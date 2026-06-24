@@ -813,7 +813,7 @@ span.nav-link-active {
 .footer-content-container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   /*gap: 80px;*/
   gap: clamp(40px, calc(40px + 40 * ((100vw - 1200px) / (1280 - 1200))), 80px);
