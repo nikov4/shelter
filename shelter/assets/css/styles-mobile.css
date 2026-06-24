@@ -175,7 +175,6 @@
     padding: 74px 192px 100px 192px;
     margin-left: auto;
     margin-right: auto;
-
     max-width: var(--page-width-tablet);
     display: flex;
     flex-direction: column-reverse;
@@ -201,9 +200,31 @@
     margin-right: clamp(20px, calc(20px + 10 * ((100vw - 320px) / (768 - 320))), 30px);
   }
 
+  .header-h1,
   .header-h2 {
     font-size: clamp(25px, calc(25px + 10 * ((100vw - 320px) / (768 - 320))), 35px);
     letter-spacing: clamp(1.5px, calc(0.6px + 0.6 * ((100vw - 320px) / (768 - 320))), 2.1px);
+  }
+
+  .start-container {
+    width: 100%;
+    padding: 0px 10px;
+  }
+
+  .start-content-container {
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .start-image-container {
+    margin: 4px 0 0 40px;
+  }
+
+  .start-header {
+    width: clamp(250px, calc(250px + 100 * ((100vw - 320px) / (768 - 320))), 350px);
   }
 
   .footer {
