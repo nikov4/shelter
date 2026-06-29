@@ -197,12 +197,21 @@
     transition: none;
   }
 */
+
   .nav-links-container {
     display: none;
   }
 
+  span.burger-link::before {
+    top: 50px;
+  }
+
   .burger-button-container {
     display: block;
+  }
+
+  .burger-container {
+    display: flex;
   }
 
   .nav-container {
