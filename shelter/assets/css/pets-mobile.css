@@ -1,0 +1,65 @@
+/* tablet */
+
+@media (max-width: 768px) {
+  .section-cards {
+    padding: 80px 30px 77px 30px;
+  }
+
+  .cards-container {
+    padding: 15px 0 25px 0;
+  }
+
+  .pet-card-03 {
+    display: flex;
+  }
+
+  .pet-card-07,
+  .pet-card-08,
+  .pet-card-09 {
+    display: none;
+  }
+
+  .pets-slider {
+    row-gap: 31px;
+  }
+
+  .pets-navigation {
+    margin-top: 2px;
+  }
+}
+
+/* mobile */
+
+@media (max-width: 767px) {
+  .burger-line {
+    background-color: #000;
+  }
+
+  .section-cards {
+    /*padding: 80px 40px 100px 40px;*/
+    padding-top: clamp(41px, calc(41px + 39 * ((100vw - 320px) / (768 - 320))), 80px);
+    padding-bottom: clamp(43px, calc(43px + 57 * ((100vw - 320px) / (768 - 320))), 100px);
+    padding-left: clamp(10px, calc(10px + 20 * ((100vw - 320px) / (768 - 320))), 30px);
+    padding-right: clamp(10px, calc(10px + 20 * ((100vw - 320px) / (768 - 320))), 30px);
+  }
+
+  .cards-container {
+    /*padding: 25px 0;*/
+    padding-top: clamp(25px, calc(25px + 20 * ((100vw - 320px) / (768 - 320))), 45px);
+  }
+
+  .pet-name {
+    padding-top: 4px;
+  }
+
+  .pet-card-04,
+  .pet-card-05,
+  .pet-card-06 {
+    display: none;
+  }
+
+  .pets-navigation {
+    /*gap: 20px;*/
+    gap: clamp(10px, calc(10px + 10 * ((100vw - 320px) / (768 - 320))), 20px);
+  }
+}
